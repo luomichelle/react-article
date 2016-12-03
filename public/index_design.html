@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NYT React Search</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Bootswatch -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	
+	<div class="container">
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">NYT-React</a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Search</a></li>
+						<li><a href="#">Saved Articles</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+
+		<!-- Jumbotron -->
+		<div class="jumbotron">
+			<h2 class="text-center" style="text-decoration: underline"><strong>New York Times Article Scrubber</strong></h2>
+			<h3 class="text-center">Search for and save articles of interest.</h3>
+		</div>
+	
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h1 class="panel-title"><strong><i class="fa fa-newspaper-o" aria-hidden="true"></i>  Query</strong></h1>
+					</div>
+					<div class="panel-body">
+
+
+						<form>
+							<div class="form-group">
+								<h4 class=""><strong>Topic</strong></h4>
+								<input type="text" class="form-control " id="search_topic" />
+
+								<h4 class=""><strong>Start Year</strong></h4>
+								<input type="text" class="form-control " id="search_start" />
+
+								<h4 class=""><strong>End Year</strong></h4>
+								<input type="text" class="form-control " id="search_end" />
+
+							</div>
+
+							
+							<div class="pull-right">
+								<button type="submit" class="btn btn-danger"><h4>Submit</h4></button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h1 class="panel-title"><strong><i class="fa fa-list-alt"></i>  Results</strong></h1>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group">
+						  <li class="list-group-item">
+						
+							<h3>
+							  	<span><em>Aliens Invade Paris</em></span>
+								<span class="btn-group pull-right" >
+									<button class="btn btn-default ">View Article</button>
+									<button class="btn btn-primary">Save</button>
+								</span> 
+							</h3>
+							<p>Date Published: 03/15/16</p>
+							
+						  </li>
+
+						  <li class="list-group-item">
+						
+							<h3>
+							  	<span><em>Obama Gives Commencement Speech</em></span>
+								<span class="btn-group pull-right" >
+									<button class="btn btn-default ">View Article</button>
+									<button class="btn btn-primary">Save</button>
+								</span> 
+							</h3>
+							<p>Date Published: 03/15/16</p>
+
+						  </li>
+
+						  <li class="list-group-item">
+						
+							<h3>
+							  	<span><em>AIDS is Cured!</em></span>
+								<span class="btn-group pull-right" >
+									<button class="btn btn-default ">View Article</button>
+									<button class="btn btn-primary">Save</button>
+								</span> 
+							</h3>
+							<p>Date Published: 03/15/16</p>
+
+							
+						  </li>
+
+						  <li class="list-group-item">
+						
+							<h3>
+							  	<span><em>Knicks Win Championship</em></span>
+								<span class="btn-group pull-right" >
+									<button class="btn btn-default ">View Article</button>
+									<button class="btn btn-primary">Save</button>
+								</span> 
+							</h3>
+							<p>Date Published: 03/15/16</p>
+							
+						  </li>
+
+						  <li class="list-group-item">
+						
+							<h3>
+							  	<span><em>Mud: The New Superfood?</em></span>
+								<span class="btn-group pull-right" >
+									<button class="btn btn-default ">View Article</button>
+									<button class="btn btn-primary">Save</button>
+								</span> 
+							</h3>
+							<p>Date Published: 03/15/16</p>
+							
+						  </li>						  
+						</ul>					
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	
+</body>
+</html>
