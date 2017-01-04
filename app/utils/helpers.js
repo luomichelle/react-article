@@ -2,7 +2,7 @@
 var axios = require('axios');
 
 /* NYT API Key*/
-var APIKey = "9d4a8986921972b65754ea0809d47c84:12:74623931";
+var APIKey = "0f78db0dc75b44969a2606a226d87e9a";
 
 // Helper Functions (in this case the only one is runQuery)
 var helpers = {
